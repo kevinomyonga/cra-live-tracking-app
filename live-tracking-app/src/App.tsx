@@ -203,13 +203,7 @@ function App() {
                     }}
                     onCloseClick={() => setSelectedDriver(null)}
                   >
-                    <p>
-                      {selectedDriver.name}
-                      {/* {selectedDriver.field_address.address_line1}{" "}
-                  {selectedDriver.field_address.address_line2} -{" "}
-                  {selectedDriver.field_address.postal_code}{" "}
-                  {selectedDriver.field_address.locality} */}
-                    </p>
+                    <p>{selectedDriver.name}</p>
                   </InfoWindow>
                 )}
               </GoogleMap>
