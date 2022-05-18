@@ -48,7 +48,7 @@ function App() {
   >(null);
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyAy5FgHYJX_cttSydzvT-IGURbsqwPS314",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY as string,
   });
   const onLoad = React.useCallback(
     (mapInstance: { fitBounds: (arg0: google.maps.LatLngBounds) => void }) => {
